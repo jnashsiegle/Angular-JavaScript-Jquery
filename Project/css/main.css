@@ -172,7 +172,7 @@ pre {
 }
 ul{
 	
-	margin-left: 25%;	
+	margin-left: 40%;	
 	z-index:100000;	
 	font-family:'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
 	display: inline;
@@ -202,9 +202,7 @@ li a {
 }
 li a:hover {	
 	padding: 10px;
-	background-color:#cabdaa;
-	border-radius: 10% 20%;
-	color: #9e6037;
+	font-size: 125%;
 }
 #overlay {
     position: fixed;

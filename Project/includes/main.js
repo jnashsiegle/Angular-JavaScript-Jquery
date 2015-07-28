@@ -1,11 +1,15 @@
+/**
+ * Created by janasiegle on 7/23/2015.
+ */
+ 
 window.onload = function() {
 	var canvas = document.getElementById("canvas1");
 	var stage = new createjs.Stage(canvas);
-	//text class is for working with text
+	
 	var sentence = new createjs.Text();
 	var sentence2 = new createjs.Text();
 
-	//modify the text property
+	//text properties
 	sentence.text = "LightPoint";
 	sentence2.text = "Development"
 	sentence.font = "bold 80px 'Goudy Old Style'";
@@ -13,8 +17,7 @@ window.onload = function() {
 	sentence.color = "#657036";
 	sentence2.color = "#657036";	
 
-	//text IS a display object
-	//it inherits all of the normal properties
+	//text coordinates
 	sentence.x = 225;
 	sentence.y = 100;
 	sentence2.x = 300;
@@ -24,7 +27,7 @@ window.onload = function() {
 	stage.addChild(sentence2);
 	stage.update();	
 
-	//Add an image by the name
+	//Let's add my star now
 
 	var image = new Image();
             image.src = "img/nautStar.png";

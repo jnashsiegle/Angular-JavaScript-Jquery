@@ -4,9 +4,8 @@
 
 var myLP = angular.module("myLP", ['ui.router']);
 
-myLP.config(function($stateProvider, $urlRouterProvider) {
+myLP.config(function($stateProvider, $urlRouterProvider) {    
     
-    //noinspection ChainedFunctionCallJS
     $stateProvider
         
         .state('company', {
@@ -29,9 +28,7 @@ myLP.config(function($stateProvider, $urlRouterProvider) {
             url: '/contact',            
             templateUrl: 'contact.html'
         })  
-        //.otherwise({
-            //redirectTo: '/home.html'
-        //});
+        
     
 })
 
