@@ -1,0 +1,77 @@
+<!-- Activism content -->
+	<article>
+		
+        <canvas id="trafficking" width="600" height="400"></canvas>
+        <div id="traf_legend" class="chart_legend"></div>
+		</article>
+<script>
+var pieData = [
+                {
+                    value: 46,
+                    color:"#9e6037",
+                    label: "Prostitution"
+                },
+                {
+                    value : 27,
+                    color : "#c4c87b",
+                    label : "Domestic Servitude"
+                },
+                {
+                    value : 10,
+                    color : "#cabdaa",
+                    label : "Agriculture"
+                },
+                {
+                    value : 5,
+                    color : "#ebc280",
+                    label : "Factories"
+                },
+                {
+                    value : 12,
+                    color : "#657036",
+                    label : "Misc"
+                }
+            ];
+            // pie chart options
+            var pieOptions = {
+                 segmentShowStroke : true,
+                 segmentStrokeColor : "#000000",
+                 segmentStrokeWidth : 2,
+                 animateRotate: true,                 
+                 
+                 tooltipTemplate : "<%= label %>: <%= value %>% ",
+                 animation : true,
+                 animationSteps : 60,
+                 animationEasing : "easeInOutElastic,"
+
+            }
+            // get pie chart canvas
+            var trafficking= document.getElementById("trafficking").getContext("2d");
+            // draw pie chart
+            new Chart(trafficking).Pie(pieData, pieOptions);
+
+           
+
+            </script>
+
+	<article>
+	
+	<video id = "vid" width = "400" onClick= "pauseToggle()">
+		<source src = "img/video/countdown.mp4" type = "video/mp4" />
+		<source src = "img/video/countdown.ogg" type = "video/ogg" />
+		Video is Not Supported
+	</video>
+
+		<button id = "vidBtn" onClick = "clicked()">Watch Now!</button>
+		<button id = "muteBtn" onClick = "vidmute()" >Mute</button>
+		</article>
+
+		
+		
+
+	
+
+
+
+
+    
