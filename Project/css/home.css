@@ -173,13 +173,21 @@ nav ul li:hover, {
 	margin: 30px;
 	display: inline-block;	
 }
+
 #gallery{
 	width: 100%;
-    margin: 0 auto;    
+	padding-top: 5%;       
 }
 #gallery h1, #gallery h2, {
 	text-align: left;
-	margin-top: 10%;
+}
+#galHead {
+	padding-top: 2.5%;
+}
+#galHead  i{
+	float: left;
+	color: #9e6037;	
+	padding-right: 10px;
 }
 #gallery article, #staff_ctr article {
     display: inline-block;
