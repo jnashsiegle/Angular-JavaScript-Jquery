@@ -78,11 +78,10 @@ html, body{
 a {
 	text-decoration: none;
 }
-h1, h2, h3, h4, blockquote,{
-	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
-}
-p, li, pre {
+
+h1, h2, h3, h4, blockquote,p, li, pre {
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	color: #9e6037;
 }
 h1 {
 	font-size: 36px;
@@ -180,7 +179,7 @@ nav ul li:hover, {
 }
 #gallery h1, #gallery h2, {
 	text-align: left;
-	margin-top: 30px;
+	margin-top: 10%;
 }
 #gallery article, #staff_ctr article {
     display: inline-block;
