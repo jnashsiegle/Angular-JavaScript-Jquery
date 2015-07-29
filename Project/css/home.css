@@ -307,7 +307,7 @@ button:hover{
   	text-shadow: 1px 1px 1px #ebc280; 
 }
 #header{
-	width: 75%;
+	width: 100%;
 	display: inline;	
 }
 #header blockquote{
