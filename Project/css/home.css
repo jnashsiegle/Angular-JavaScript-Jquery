@@ -56,7 +56,7 @@ table {
 
 /*Basic Styling*/
 
-footer::after, section::after{
+footer::after, section::after, section::before{
     content: "";
     display: table;
     clear: both;
@@ -176,18 +176,20 @@ nav ul li:hover, {
 
 #gallery{
 	width: 100%;
-	padding-top: 5%;       
+	padding-top: 10%;       
 }
 #gallery h1, #gallery h2, {
 	text-align: left;
 }
-#galHead {
+#galHead h1{
 	padding-top: 2.5%;
+	float: left;
 }
 #galHead  i{
 	float: left;
 	color: #9e6037;	
-	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 2.5%;
 }
 #gallery article, #staff_ctr article {
     display: inline-block;
