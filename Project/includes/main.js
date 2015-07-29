@@ -44,7 +44,7 @@ window.onload = function() {
 
 /*+++++++++++++++++Let's fade in the site name++++++++++++++++*/
 $(document).ready(function() { 
-	$("#canvas1").fadeIn(2000);            
+	$("#canvas1").fadeIn(2500);            
 });
 
 /*++++++++++++++++Let's make a hidden navigation set ++++++++++++++ */
@@ -66,7 +66,7 @@ $().ready(function() {
 	$(downArc).arctext({radius: 400, dir: -1});
 });
 
-/*+++++++++++++preLoad Images*/
+/*+++++++++++++Time to preLoad Images to help the star render correctly*/
 $.preloadImages = function() {
   for (var i = 0; i < arguments.length; i++) {
     $("<img />").attr("src", arguments[i]);

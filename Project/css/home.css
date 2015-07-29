@@ -56,7 +56,7 @@ table {
 
 /*Basic Styling*/
 
-footer::after, section::after, section::before{
+section::after, section::before, article::after, footer::before{
     content: "";
     display: table;
     clear: both;
@@ -69,8 +69,8 @@ html {
 }
 html, body{
 	position: relative;	
-	width: 100%;
-	height: 100%;
+	width: 100%;	
+	min-height: 100%;
 	max-width: 1900px;
 	background-color: #ffeacd;	
 	margin: 0;		
@@ -91,7 +91,7 @@ h1 {
 	line-height: 36px;
 }
 h2 {
-	font-size: 32px;
+	font-size: 30px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -140,9 +140,7 @@ header h2{
 	margin-top: 30px;
 }
 
-article{
-	margin:30px 30px 0 30px;
-}
+
 /*++++++++Navigation++++++++*/
 nav{
 	float: left;
@@ -181,11 +179,11 @@ nav ul li:hover, {
 #gallery h1, #gallery h2, {
 	text-align: left;
 }
-#galHead h1{
+.galHead h1{
 	padding-top: 2.5%;
 	float: left;
 }
-#galHead  i{
+.galHead  i, header i{
 	float: left;
 	color: #9e6037;	
 	padding-left: 10px;
@@ -200,6 +198,12 @@ nav ul li:hover, {
     padding: 15px 20px 40px 15px;
     margin: 15px auto 0 auto;
     overflow: hidden;
+}
+section article {
+	margin-top: 60px;
+}
+.galHead p {
+	float: right;
 }
 #staff_ctr article {
 	width: 250px;
@@ -225,6 +229,18 @@ nav ul li:hover, {
     font-variant: small-caps;
     text-align: left;    
 }
+#gallery article p{
+	display: inline;
+	float: left;
+
+}
+#gallery i{
+	color: #9e6037;
+	float: right;
+	margin-top: 2.5%;
+	margin-right: 10px;
+	
+}
 #staff_ctr article p {
 	text-align: center;
 }
@@ -247,6 +263,7 @@ canvas#trafficking{
     height: 12px;
     margin-right: 5px;
 }
+
 
 
 
