@@ -254,16 +254,22 @@ div.ng-scope{
 	margin-left: 50px;
 	float: left;
 }
-canvas#trafficking{
-	border: 1px solid black;
-}
-.traf_legend li span{
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-right: 5px;
-}
+/*+++++++++++++++activism++++++++++++++++*/
 
+canvas#trafficking{	
+	-ms-transform: rotate(5deg); /* IE 9 */
+   	-webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+   	transform: rotate(5deg);
+}
+#data {
+	display: inline;
+	float: left;
+}
+#vidGroup{
+	float: right;
+	border: 1px solid blue;
+	padding: 0; !important
+}
 
 
 

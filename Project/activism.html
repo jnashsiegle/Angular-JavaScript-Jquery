@@ -1,7 +1,7 @@
 <!-- Activism content -->
-	<article>
+	<article id = "data">
 		
-        <canvas id="trafficking" width="600" height="400"></canvas>
+        <canvas id="trafficking" width="300" height="300"></canvas>
         <div id="traf_legend" class="chart_legend"></div>
 		</article>
 <script>
@@ -36,7 +36,7 @@ var pieData = [
             var pieOptions = {
                  segmentShowStroke : true,
                  segmentStrokeColor : "#000000",
-                 segmentStrokeWidth : 2,
+                 segmentStrokeWidth : 1,
                  animateRotate: true,                 
                  
                  tooltipTemplate : "<%= label %>: <%= value %>% ",
@@ -54,16 +54,17 @@ var pieData = [
 
             </script>
 
-	<article>
 	
-	<video id = "vid" width = "400" onClick= "pauseToggle()">
-		<source src = "img/video/countdown.mp4" type = "video/mp4" />
-		<source src = "img/video/countdown.ogg" type = "video/ogg" />
+	
+	<video id = "vid" width = "400" onClick= "pauseToggle()" poster = "img/SocialMedia_9.jpg">
+		<source src = "img/video/A21_Commodities.mp4" type = "video/mp4" />
+		<source src = "img/video/A21_Commodities.ogg" type = "video/ogg" />
 		Video is Not Supported
 	</video>
-
+    <div id = "btnGrp">
 		<button id = "vidBtn" onClick = "clicked()">Watch Now!</button>
 		<button id = "muteBtn" onClick = "vidmute()" >Mute</button>
+    </div>
 		</article>
 
 		
