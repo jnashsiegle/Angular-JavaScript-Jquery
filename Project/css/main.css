@@ -224,6 +224,8 @@ li a:hover {
 	width: 300px;
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 	text-transform: uppercase;
+	color: #9e6037;
+	fill: #9e6037;
 
 }
 #upArc, #downArc{
@@ -232,14 +234,17 @@ li a:hover {
 
 #upArc{
 	margin-top:2%;
-	text-align: center;
-	color: black; 
+	text-align: center;	 
 }
 #downArc{
-	margin-top:20%;
+	margin-top:10%;
 	text-align: center;
-	color: black;
-   
+}
+section#tagline > i {
+	margin-top: 10%;
+	margin-left: 40%;
+	
+
 }
 footer{
 	position: absolute;    
@@ -248,8 +253,8 @@ footer{
     text-align: center;
   }
 footer p {
-	font-size: 150%;
-	font-weight: bold;
+	font-size: 100%;
+	font-weight: normal;
 	color: #000;
 }
 
