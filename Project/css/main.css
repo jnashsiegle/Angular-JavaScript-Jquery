@@ -1,0 +1,258 @@
+/*Jana Nash-Siegle
+WIA - Eric Silvay
+
+Colors:
+#9e6037  dark tan
+#ebc280  light tan
+#cabdaa  med gray
+#657036  dark olive green
+#c4c87b  light olive
+#ffeacd  cream
+
+*/
+
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Reset Finished*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body{
+	background:url("../img/sand.jpg")  no-repeat fixed;
+	background-size: cover;
+	background-position: absolute;
+	min-height: 100%; 
+	min-width: 100%;
+	width: 100%;
+	height: 100%;
+	max-width: 1900px;
+	background-color: #ffeacd;	
+	margin: 0;	
+	overflow: hidden;
+}
+#lighthouse{
+	float:left;
+	margin-left: 20px;	
+	width: 100%;
+	max-width: 300px;
+}
+canvas {	
+	float:right;
+	margin-top: 10%;
+	margin-right: 10%;
+	display: none;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 19px;
+}
+h2 {
+	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 19px;
+}
+h3 {
+	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 18px;
+}
+p {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 22px;
+}
+blockquote {
+	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 30px;
+}
+pre {
+	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: bold;
+	line-height: 22.px;
+}
+
+/*++++++++Navigation++++++++*/
+
+.menu-btn  {
+	position: absolute;
+	margin-left: 95%;
+	top: 2%;
+	padding-right: 10px;	
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+} 
+.menu-btn span {	
+	display: block;
+	width: 38px;
+	height: 6px;
+	margin: 8px 0;
+	background: #9e6037;
+	z-index: 99;
+} 
+.hamburger{
+	display: none;
+} 
+.expand {
+	display: block !important; 
+}
+.container { 
+	margin: 0px 20% 0px 20%; 
+}
+ul{
+	
+	margin-left: 40%;	
+	z-index:100000;	
+	font-family:'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	display: inline;
+}
+li {
+	margin-top: 5%;
+	display: inline-block;
+	font-size: 48px;
+	text-align: center;
+	line-height: 2;	
+	color: #ffeacd;
+	z-index:100000;
+	-webkit-transform: rotate(-35deg);
+    -webkit-transform-origin: bottom left;
+    -moz-transform: rotate(-35deg);
+    -moz-transform-origin: bottom left;
+    -ms-transform: rotate(-35deg);
+    -ms-transform-origin: bottom left;
+    -o-transform: rotate(-35deg);
+    -o-transform-origin: bottom left;
+    transform: rotate(-35deg);
+    transform-origin: bottom left;	
+}
+li a {
+	color: #ffeacd;
+}
+li a:hover {	
+	padding: 10px;
+	font-size: 125%;
+}
+#overlay {
+    position: fixed;
+    top: 25%;    
+    width: 100%;
+    height: 25%;
+    background-color: #000;
+    filter:alpha(opacity=75);
+    -moz-opacity:0.75;
+    -khtml-opacity: 0.75;
+    opacity: 0.75;
+    z-index: 100;    
+}
+/*++++++++End of Navigation+++++++++++*/
+/*++++++++++Misc Elements++++++++++++*/
+#tagline{
+	margin-left: 25px;
+	width: 300px;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	text-transform: uppercase;
+	color: #9e6037;
+	fill: #9e6037;
+}
+#upArc, #downArc{
+	font-size: 14px;	
+}
+#upArc{
+	margin-top:2%;
+	text-align: center;	 
+}
+#downArc{
+	margin-top:10%;
+	text-align: center;
+}
+section#tagline > i {
+	margin-top: 10%;
+	margin-left: 40%;
+	
+
+}
+footer{
+	position: absolute;    
+    bottom: 0;    
+    width: 100%;
+    text-align: center;
+  }
+footer p {
+	font-size: 100%;
+	font-weight: normal;
+	color: #000;
+}
+
+
+
