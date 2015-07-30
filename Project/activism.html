@@ -1,4 +1,7 @@
 <!-- Activism content -->
+<header class = "galHead">
+               <h1>Activism</h1><i class = "fa fa-anchor fa-2x"></i>
+            </header>
     <div id = "header">
         <blockquote>Right now over 27 MILLION people are victims of human trafficking, world-wide. The average age is 14 years old.</blockquote>
         <img id = "slavery" src = "img/banner_slavery.jpg" alt "Every 30 seconds another person becomes a victim of slavery">
@@ -7,7 +10,7 @@
 	<article id = "data">
 		<h3>Trafficking Statistics</h3>
         <canvas id="trafficking" width="300" height="300"></canvas>        
-	</article>
+	
 <script>  //I don't like inline scripting but due to all the scripts, plugins, it was the only way I could get the chart.js to work.  As I would not normally run so much at one time, I chose this as the best of all evils after hours of tweaking it externally with no luck.  This was the last element I added.
 var pieData = [
                 {
@@ -53,6 +56,8 @@ var pieData = [
             // draw pie chart
             new Chart(trafficking).Pie(pieData, pieOptions); 
 </script>
+    <p>Categories of Human Trafficking</p>
+</article>
 
 	
 	<div id = "video">
@@ -72,10 +77,11 @@ var pieData = [
 
 <section id = "a21">
 <article>
-<p>Actively participating in conjunction with A21.org, a non-profit organization whose mission it is to abolish injustice in the 21st Century, we believe that by working together an end can come to the modern day equivelancy of slavery.  Human - Trafficking.</p>
+<p>Actively participating in conjunction with <a href = "http://a21.org"> A21.org</a>, a non-profit organization whose mission it is to abolish injustice in the 21st Century, we believe that by working together an end can come to the modern day equivelancy of slavery.  Human - Trafficking.</p>
 <p>Through education, awareness and community involvement we strive to make our communities safer and more aware by working together.</p>
 </article>
 </section>
+
 
 		
 		
