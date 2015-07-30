@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title> LightPoint Development </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="css/lightbox.css" rel="stylesheet">
+        <link rel = "stylesheet" href = "css/home.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src = "includes/modernizr.js"></script>
+        <script src = "includes/respond.min.js"></script> 
+    </head>
+<body>
+    <header id = "banner"><div></div></header>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "company.html">Company</a></li>
+                <li><a href = "activism.html">Activism</a></li>
+                <li><a href = "gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <!--This is where content will be displayed -->
+<div id = "content">
+            <!-- Activism content -->
+    <div class = "galHead">
+                   <h1>Activism</h1><i class = "fa fa-anchor fa-2x"></i>
+    </div>
+    <div id = "header">
+        <blockquote>Right now over 27 MILLION people are victims of human trafficking, world-wide. The average age is 14 years old.</blockquote>
+        <img id = "slavery" src = "img/banner_slavery.jpg" alt = "Every 30 seconds another person becomes a victim of slavery">
+    </div>
+
+<section>    
+<article id = "data"> 
+        <h3>Trafficking Statistics</h3>       
+            <canvas id="trafficking" width="250" height="250"></canvas> 
+            <p>Categories of Human Trafficking</p>
+</article>    
+<article id = "video">
+        <h3>Information on Human Trafficking</h3>
+        <video id = "vid" width = "400" onClick= "pauseToggle()" poster = "img/SocialMedia_9.jpg">
+            <source src = "img/video/A21_Commodities.mp4" type = "video/mp4" />
+            <source src = "img/video/A21_Commodities.ogg" type = "video/ogg" />
+            Video is Not Supported
+        </video>
+    <div id = "btnGrp">
+            <button id = "muteBtn" onClick = "vidmute()" >Mute</button>
+            <button id = "vidBtn" onClick = "clicked()">Watch Now!</button>     
+    </div>
+</article>
+</section>
+
+<section id = "a21">
+    <h3>What we do locally:</h3>
+<article>
+        <p>Actively participating in conjunction with <a href = "http://a21.org"> A21.org</a>, a non-profit organization whose mission it is to abolish injustice in the 21st Century, we believe that by working together an end can come to the modern day equivelancy of slavery.  Human - Trafficking.</p>
+        <p>Through education, awareness and community involvement we strive to make our communities safer and more aware by working together.</p>
+</article>
+</section>
+    </div>
+        
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>  
+<script src="includes/plugins/lightbox.js"></script>
+<script src = "includes/vid.js"></script>
+<script src = "includes/nav.js"></script>
+<script src = "includes/plugins/Chart.js"></script>
+<script src = "includes/data.js"></script>
+</body>
+</html>

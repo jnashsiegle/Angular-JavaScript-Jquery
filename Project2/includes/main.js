@@ -75,3 +75,4 @@ $.preloadImages = function() {
 
 $.preloadImages("img/nautStar.png");
 
+

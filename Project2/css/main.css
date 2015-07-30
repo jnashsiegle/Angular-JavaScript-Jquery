@@ -78,7 +78,7 @@ html, body{
 }
 #lighthouse{
 	float:left;
-	margin-top: 2%;
+	margin-left: 20px;	
 	width: 100%;
 	max-width: 300px;
 }
@@ -176,7 +176,6 @@ ul{
 	z-index:100000;	
 	font-family:'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
 	display: inline;
-
 }
 li {
 	margin-top: 5%;
@@ -214,8 +213,7 @@ li a:hover {
     -moz-opacity:0.75;
     -khtml-opacity: 0.75;
     opacity: 0.75;
-    z-index: 100;
-    
+    z-index: 100;    
 }
 /*++++++++End of Navigation+++++++++++*/
 /*++++++++++Misc Elements++++++++++++*/
@@ -226,12 +224,10 @@ li a:hover {
 	text-transform: uppercase;
 	color: #9e6037;
 	fill: #9e6037;
-
 }
 #upArc, #downArc{
 	font-size: 14px;	
 }
-
 #upArc{
 	margin-top:2%;
 	text-align: center;	 
